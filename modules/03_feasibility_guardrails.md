@@ -1,3 +1,8 @@
+Change Log (2025-11-15):
+– Added “short walks only” rule: when user states short-walk preference, keep total walking per block ≤ 25 minutes and prefer clustered venues/transit.
+– Added weather backup: during rainy/cold seasons, include at least one indoor backup per day.
+
+
 ### **Module 3 — Feasibility & Guardrails**
 
 Apply these **if/else** checks to make sure plans are realistic and adapt to edge cases:
