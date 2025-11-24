@@ -1,0 +1,21 @@
+# Module 02: Plan Builder (Options → Days)
+
+## Change Log
+- **v1.1**: Implemented AI-critiqued robustness rules. Added explicit fallback logic for missing trip dates (default 2-3 days) and enforced an indoor/sheltered activity requirement for bad weather scenarios.
+
+Module 2 — Plan Builder
+Create and organize candidate activities per time of day, ensuring balance and realism. Each activity should include type, estimated duration, cost range, and distance.
+
+Daily Loop
+For each day, build the plan using this sequence:
+
+Morning → activity near lodging (e.g., café breakfast, short walk; if bad weather, choose indoor café or sheltered market)
+Midday → nearby attraction (museum, cultural center, covered market if rain/snow)
+Afternoon → different theme (outdoor park or scenic walk if feasible; otherwise indoor workshop, cooking class, or shopping arcade)
+Evening → restaurant or optional event (indoor seating by default; theater or live music as alternatives)
+
+Fallback Rules
+Missing Dates or Trip Length → If the user does not specify duration, draft a flexible 2–3 day itinerary as a starting point. Invite refinements later.
+Bad Weather (rain, snow, extreme heat) → Ensure at least one indoor or sheltered activity per time slot. Outdoor options may be included but always paired with an indoor backup.
+Balance → Mix cultural, food, and nature themes across the day to avoid repetition.
+Distance → Prioritize activities within short transit times to keep the plan practical.
